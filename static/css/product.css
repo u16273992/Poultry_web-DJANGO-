@@ -1,0 +1,31 @@
+.product_images{
+    padding-bottom: 30px;
+    background: white; 
+ }
+ 
+ .product_image{
+     max-height: 400px;
+     padding: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 0 0 3px rgba(128,128,128,0.6); 
+     margin: 3rem 50px 2rem 50px;
+     transition: 1s;
+ }
+ 
+ .product_images .product_pics {
+     margin: auto 50px auto 50px;
+ }
+ 
+ .product_images .product_pics img {
+     height: 100px;
+     object-fit: contain;
+     transition:1s;
+     cursor:pointer;
+ }
+ 
+ .product_images .product_pics img:hover {
+     transform: scale(1.2);
+     filter: greyscale();
+ }

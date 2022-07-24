@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Page</title>
+    <style>
+        section{
+          padding: 60px 0;
+        }
+    </style>  
+     <link rel="stylesheet" href="{% static "css/product.css" %}"/>
+</head>
+<body>
+    {{ help_insert }}
+    <section class="bg-light mt-5">
+        <div class="container">
+          <div class="row gy-3 gx-3">
+            <div class="col-lg-5 product_images shadow-sm">
+              <div class="product_image">
+                <img src={%static "images/products/chicken-feet.jpg"%} alt="" class="img-fluid">
+              </div>
+                <div class="row gy-3 product_pics">
+                  <div class="pic col-3 shadow-sm rounded">
+                    <img src={%static "images/products/chicken-hearts.webp"%} alt="">
+                  </div>
+                  <div class="pic col-3 shadow-sm rounded">
+                    <img src={%static "images/products/Chicken-Heads.jpg"%} alt="">
+                  </div>
+                  <div class="pic col-3 shadow-sm rounded">
+                    <img src={%static "images/products/chicken-intestine.jpg"%} alt="">
+                  </div>
+                  <div class="pic col-3 shadow-sm rounded">
+                    <img src={%static "images/products/Chicken-Necks.jpg"%} alt="">
+                  </div>  
+                </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="product_info">
+                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="product_category">
+                  <p>Men<span class="has_color_primary"></span>R100</p>
+                </div>
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <div class="product_short_description">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio voluptatum magni 
+                    quibusdam reprehenderit voluptatem ab saepe esse distinctio illum deserunt!
+                  </p>
+                </div>
+              </div>
+  
+              <hr>
+  
+              <div class="choices py-4">
+                <div class="row align-items-end">
+                  <!-- Quantity -->
+                  <div class="col-5">
+                    <small>Qty</small>
+                    <div class="d-flex">
+                        <button class="btn">-</button>
+                        <input type="text" value="1" class="form-control">
+                        <button class="btn">+</button>
+                    </div>
+                  </div>
+                  <!-- Sizes -->
+                  <div class="col-7">
+                    <small>Sizes</small>
+                    <label for="small">
+                      <input type="radio" name="size" id="small" value="small">
+                      Small
+                    </label>
+                    <label for="medium">
+                      <input type="radio" name="size" id="medium" value="medium">
+                      Medium
+                    </label>
+                    <label for="large">
+                      <input type="radio" name="size" id="large" value="large">
+                      Large
+                    </label>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="buttons my-3">
+                <div class="w-100 btn has_bg_secondary text-white">Add to Cart</div>
+                <div class="w-100 border mt-3 btn bg-none">Buy Now</div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
